@@ -7,11 +7,15 @@
 | Otavio Miklos Nogueira | 554513 |
 | Luciayla Yumi Kawakami | 557987 |
 
+---
+
 ## Rodando o aplicativo
 
 1. `git clone https://github.com/omininola/sprint1_mobile`
 2. Dentro da pasta do projeto, execute `npm install` para instalar as dependências.
 3. Rodar o comando `npm run web` para iniciar o aplicativo.
+
+---
 
 ## Descrição do projeto
 
