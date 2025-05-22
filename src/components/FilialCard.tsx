@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View } from "react-native";
 
+import Button from "@/components/Button";
 import { Filial } from "@/libs/types";
 import { useRouter } from "expo-router";
-import Button from "@/components/Button";
 
 export default function FilialCard({
   filial,

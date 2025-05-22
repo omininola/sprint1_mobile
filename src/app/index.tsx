@@ -12,7 +12,7 @@ export default function Home() {
   const { motos, setMotos } = useMotos();
   const { filiais, setFiliais } = useFiliais();
 
-  const handleDeleteMotos = async (id: number) => {
+  function handleDeleteMotos (id: number) {
     setMotos((prevMotos) => {
       const newMotos = prevMotos.filter((moto) => moto.id_moto !== id);
       AsyncStorage.setItem("MOTOS", JSON.stringify(newMotos));
@@ -20,7 +20,7 @@ export default function Home() {
     });
   };
 
-  const handleDeleteFiliais = async (id: number) => {
+  function handleDeleteFiliais (id: number) {
     setFiliais((prevFiliais) => {
       const newFiliais = prevFiliais.filter(
         (filial) => filial.id_filial !== id,

@@ -18,8 +18,7 @@ const FiliaisContext = createContext<FiliaisContextType | undefined>(undefined);
 
 export const useFiliais = () => {
   const context = useContext(FiliaisContext);
-  if (!context)
-    throw new Error("useFiliais deve ser usado com FiliaisProvider");
+  if (!context) throw new Error("useFiliais deve ser usado com FiliaisProvider");
   return context;
 };
 
